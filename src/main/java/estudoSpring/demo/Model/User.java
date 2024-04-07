@@ -1,22 +1,31 @@
-package estudoSpring.demo.role;
+package estudoSpring.demo.Model;
 
+
+import estudoSpring.demo.Model.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
-@Table(name = "ROLE")
+@Table(name = "USERS")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-public class Role {
-
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long  id;
+    private Long id;
 
-    private String name;
+    private String username;
+
+    private String password;
+
+
+    @ManyToMany
+    private List<Role> roles;
 }

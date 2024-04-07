@@ -1,6 +1,6 @@
 package estudoSpring.demo.security;
 
-import estudoSpring.demo.user.User;
+import estudoSpring.demo.Model.User;
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

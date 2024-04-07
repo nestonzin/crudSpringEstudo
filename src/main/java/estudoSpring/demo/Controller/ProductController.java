@@ -1,6 +1,8 @@
-package estudoSpring.demo.product;
+package estudoSpring.demo.Controller;
 
 
+import estudoSpring.demo.Model.Product;
+import estudoSpring.demo.Services.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

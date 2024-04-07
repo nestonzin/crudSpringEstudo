@@ -1,7 +1,8 @@
-package estudoSpring.demo.user;
+package estudoSpring.demo.Controller;
 
+import estudoSpring.demo.Model.User;
+import estudoSpring.demo.Services.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

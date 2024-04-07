@@ -1,5 +1,8 @@
-package estudoSpring.demo.user;
+package estudoSpring.demo.Impl;
 
+import estudoSpring.demo.Model.User;
+import estudoSpring.demo.Repository.UserRepository;
+import estudoSpring.demo.Services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -7,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();

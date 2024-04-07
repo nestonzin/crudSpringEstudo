@@ -1,4 +1,4 @@
-package estudoSpring.demo.product;
+package estudoSpring.demo.Model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

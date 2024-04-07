@@ -1,9 +1,7 @@
-package estudoSpring.demo.product;
+package estudoSpring.demo.Services;
+import estudoSpring.demo.Model.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-
-
-import java.util.List;
 
 public interface ProductService {
     Page<Product> listAll(Pageable pageable);

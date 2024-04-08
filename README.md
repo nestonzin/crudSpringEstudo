@@ -6,34 +6,34 @@ Este repositório contém uma aplicação de exemplo desenvolvida utilizando o f
 
 ### `/ping`
 
-- **Método**: GET
+- **Método**: `GET`<br>
 - **Descrição**: Rota de teste para verificar se o servidor está online.
 - **Retorno**: `pong`
 
 ### `/user`
 
-- **Método**: POST
+- **Método**: `POST`<br>
 - **Descrição**: Cria um novo usuário.
 - **Body**: Deve conter os dados do usuário a ser criado.
 - **Retorno**: 🚧
 
 ### `/login`
 
-- **Método**: POST
+- **Método**: `POST`<br>
 - **Descrição**: Loga um usuário existente e retorna um token de autenticação.
 - **Body**: Deve conter as credenciais do usuário.
 - - **Retorno**: Token.
 
-### /product
-**Método**: GET
-**Descrição**: Retorna todos os produtos cadastrados no banco de dados, com opções de paginação e ordenação.
-**Parâmetros Query**:
-**page**: Página da lista de produtos (opcional, padrão: 0).
-**size**: Tamanho da página (opcional, padrão: 10).
-**name**: Ordenação pelo nome do produto (opcional, padrão: ascendente).
-**sort**: Ordenação ascendente (asc) ou descendente (desc) (opcional, padrão: asc).
-**Retorno**: Lista de produtos conforme os parâmetros fornecidos.
-- **Retorno**: `
+### `/product`
+**Método**: `GET`<br>
+**Descrição**: Retorna todos os produtos cadastrados no banco de dados, com opções de paginação e ordenação.<br>
+**Parâmetros Query**:<br>
+**page**: Página da lista de produtos (opcional, padrão: 0). <br>
+**size**: Tamanho da página (opcional, padrão: 10).<br>
+**name**: Ordenação pelo nome do produto (opcional, padrão: ascendente).<br>
+**sort**: Ordenação ascendente (asc) ou descendente (desc) (opcional, padrão: asc).<br>
+**Retorno**: Lista de produtos conforme os parâmetros fornecidos.<br>
+- **Retorno**: `<br>
 {
 	"content": [
 		{
@@ -97,25 +97,25 @@ Este repositório contém uma aplicação de exemplo desenvolvida utilizando o f
 }
 `
 
-
+<br>
 
 ### `/product`
 
-- **Método**: POST
+- **Método**: `POST`
 - **Descrição**: Cadastra um novo produto na base de dados.
 - **Body**: Deve conter os dados do produto a ser cadastrado.
 - **Retorno**: 🚧.
 
 ### `/product`
 
-- **Método**: PUT
+- **Método**: `PUT`
 - **Descrição**: Atualiza os dados de um produto na base de dados.
 - **Body**: Deve conter os dados atualizados do produto.
 -  - **Retorno**: 🚧.
 
 ### `/product`
 
-- **Método**: DELETE
+- **Método**: `DELETE`
 - **Descrição**: Exclui um produto da base de dados.
 - **Body**: Deve conter o ID do produto a ser excluído.
 - - - **Retorno**: 🚧.

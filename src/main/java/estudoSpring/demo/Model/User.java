@@ -1,7 +1,6 @@
 package estudoSpring.demo.Model;
 
 
-import estudoSpring.demo.Model.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -24,6 +23,8 @@ public class User {
     private String username;
 
     private String password;
+
+    private String token;
 
 
     @ManyToMany

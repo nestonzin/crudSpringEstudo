@@ -15,6 +15,12 @@ Este repositório contém uma aplicação de exemplo desenvolvida utilizando o f
 - **Método**: `POST`<br>
 - **Descrição**: Cria um novo usuário.
 - **Body**: Deve conter os dados do usuário a ser criado.
+- **BodyExemplo**: `
+  {
+"username:" "nestor123@teste.com",
+"password": "12345678"
+}
+`
 - **Retorno**: 🚧
 
 ### `/login`
@@ -22,6 +28,11 @@ Este repositório contém uma aplicação de exemplo desenvolvida utilizando o f
 - **Método**: `POST`<br>
 - **Descrição**: Loga um usuário existente e retorna um token de autenticação.
 - **Body**: Deve conter as credenciais do usuário.
+- **BodyExemplo**: `
+  {
+"username:" "nestor123@teste.com",
+"password": "12345678"
+}`
 - - **Retorno**: Token.
 
 ### `/product`
@@ -33,7 +44,7 @@ Este repositório contém uma aplicação de exemplo desenvolvida utilizando o f
 **name**: Ordenação pelo nome do produto (opcional, padrão: ascendente).<br>
 **sort**: Ordenação ascendente (asc) ou descendente (desc) (opcional, padrão: asc).<br>
 **Retorno**: Lista de produtos conforme os parâmetros fornecidos.<br>
-- **Retorno**: `<br>
+- **Retorno**: <br>`
 {
 	"content": [
 		{

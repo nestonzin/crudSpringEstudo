@@ -17,7 +17,7 @@ import org.springframework.data.domain.Page;
 public class ProductController {
      private final ProductService productService;
 
-    @PreAuthorize("hasRole('PRODUCT_SELECT')")
+    @PreAuthorize("hasRole('user')")
     @GetMapping
     public Page<Product> listAll(Pageable pageable) {
         return (Page<Product>) productService.listAll(pageable);
@@ -25,19 +25,19 @@ public class ProductController {
 
 
 
-    @PreAuthorize("hasRole('PRODUCT_INSERT')")
+    @PreAuthorize("hasRole('user')")
     @PostMapping
     public  Product create(@RequestBody Product product){
         return productService.create(product);
     }
 
 
-    @PreAuthorize("hasRole('PRODUCT_UPDATE')")
+    @PreAuthorize("hasRole('user')")
     @PutMapping
     public Product update(@RequestBody Product product){
         return productService.update(product);
     }
-    @PreAuthorize("hasRole('PRODUCT_DELETE')")
+    @PreAuthorize("hasRole('user')")
     @DeleteMapping
     public void delete(@RequestParam("id") Long id){
         productService.delete(id);
